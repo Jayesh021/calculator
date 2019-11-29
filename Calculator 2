@@ -1,0 +1,42 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+  
+long a,b,d;
+int c,i;
+for(i=0;i<50;i++)
+{
+cout<<"===========================================";
+cout<<"\nEnter 1st no.:"<<endl;
+cin>>a;
+cout<<"Enter 2nd no:"<<endl;
+cin>>b;
+cout<<"| Press 1 for Addition       |"<<endl;
+cout<<"| Press 2 for Subtraction    |"<<endl;
+cout<<"| Press 3 for Multiplication |"<<endl;
+cout<<"| Press 4 for division       |"<<endl;
+cin>>c;
+
+switch(c)
+{
+case 1: d=a+b;
+	cout<<"|Addition is:"<<d<<endl;
+	break;
+case 2: d=a-b;
+	cout<<"|Subtration is:"<<d<<endl;
+	break;
+case 3: d=a*b;
+	cout<<"|Multiplication is:"<<d<<endl;
+	break;
+case 4: d=a/b;
+	cout<<"|Division is:"<<d<<endl;
+		break;
+default:
+        cout<<"Invalid Option"<<endl;
+}}
+return 0;
+getch();
+
+}
