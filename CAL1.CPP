@@ -4,8 +4,8 @@
 int main()
 {
 	float i,a,b,d;
-	char c;
-for(i=0;i<20;i++)
+	char c,choice='y';
+while(choice=='y')
 {
 	cout<<"======================================";
 	cout<<"\n1st number =";
@@ -34,8 +34,13 @@ else if(c=='/')
 		d=a/b;
 		cout<<"Division is:"<<d<<endl;
 }
-else  
+else
+{
  cout<<"Invalid"<<endl;
+}
+	cout<<"Do you want to perform more such options press y else press n";
+	cin>>choice;
+	
 }
 return 0;
 }
